@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file sample-packages/docker/Dockerfile --tag my-image-name:$(date +%s)
     - name: Publish Docker Images to GPR
-      run: docker push ghcr.io/OWNER/IMAGE_NAME:latest
+      run: docker push ghcr.io/basvandesande/IMAGE_NAME:latest
